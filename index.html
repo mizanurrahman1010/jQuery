@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
+    <script src="js/jquery.js"></script>
 </head>
+<style>
+    body {font-family: arial}
+    #box{
+        padding:10px;
+        border:1px solid #000;
+    }
+</style>
 <body>
-    
+    <div id="box" class="test1">
+        <h2>Test Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore distinctio sunt voluptatibus, molestiae voluptates quas reiciendis corrupti omnis magnam ipsa quidem voluptate cum, dolorum ex maxime. Officia, doloremque ad?</p>
+    </div>
+    <!-- <ul id="list">
+        <li>Orange</li>
+        <li class="test"> Banana</li>
+        <li>Grapes</li>
+        <li class="test">Apple</li>
+        <li>Guava</li>
+
+    </ul> -->
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("ul li:gt(0)").css("border","2px solid blue");
+            $(document).ready(function(){
+                $('body').keypress(function(){
+                    $(this).css('background-color','yellow');
+
+
+                });
+                $('body').keyup(function(){
+                    $(this).css('background-color','green');
+
+
+                });
+                $('body').keyup(function(){
+                    $(this).css('background-color','yellow');
+
+
+                });
+
+            });
+
+        });
+    </script>
 </body>
 </html>
